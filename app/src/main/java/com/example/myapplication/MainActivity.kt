@@ -31,13 +31,13 @@ class MainActivity : AppCompatActivity() {
             }
         })
         // bugs here
-        Choreographer.getInstance().postFrameCallback{object : Choreographer.FrameCallback {
-            override fun doFrame(frameTimeNanos: Long) {
-                println("Recyclview doFrame frameTimeNanos:$frameTimeNanos")
-                Choreographer.getInstance().postFrameCallback(this)
-            }
-        }}
-g'i't
+//        Choreographer.getInstance().postFrameCallback{object : Choreographer.FrameCallback {
+//            override fun doFrame(frameTimeNanos: Long) {
+//                println("Recyclview doFrame frameTimeNanos:$frameTimeNanos")
+//                Choreographer.getInstance().postFrameCallback(this)
+//            }
+//        }}
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
